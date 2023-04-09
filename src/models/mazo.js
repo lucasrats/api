@@ -22,7 +22,7 @@ const mazoSchema = new mongoose.Schema({
     },
     description_md:   {
         type: String,
-        required: true
+        required: false
     },
     user_id:   {
         type: String,
@@ -38,19 +38,19 @@ const mazoSchema = new mongoose.Schema({
     },
     sideslots:  {
         type: [cartaBDSchema],
-        required: true
+        required: false
     },
     version:   {
         type: String,
-        required: true
+        required: false
     },
     last_pack:   {
         type: String,
-        required: true
+        required: false
     },
     freeze_comments:   {
         type: String,
-        required: true
+        required: false
     },
     is_published:   {
         type: Boolean,
